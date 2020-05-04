@@ -21,25 +21,40 @@
         <label for="location"></label>
         <span class="locationSpan"
           ><input type="text" id="location" placeholder="Location..." />
-          <button class="btn btn-danger submit">
+          <button type="submit" class="btn btn-danger submit">
             GO
           </button></span
         >
+        <div class="recent">
+          
+        </div>
       </div>
     </div>
     <div class="container main">
       <div class="row">
-        <div class="col-6 current">
-          <h2></h2>
+        <div class="col-8 current card">
+          <div class="card-body">
+            <h3 class="currentHeader"></h3>
+            <span class="weatherIcon"><img id="currIcon" /></span>
+            <br />
+            <span class="temperature"></span>
+            <br />
+            <span class="humidity"></span>
+            <br />
+            <span class="windspeed"></span>
+            <br />
+            <span class="uvIndex"></span>
+            <br />
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 forecast">
-          <h2></h2>
+        <div class="col-8 forecast">
         </div>
       </div>
     </div>
     <script src="./jquery.js"></script>
-    <script type="text/javascript" src="./scriptastic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="./scripto.js"></script>
   </body>
 </html>
